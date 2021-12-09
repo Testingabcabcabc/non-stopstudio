@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Contact Form - Non-Stop Studio</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/a44cc5cef6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+
+        <div class="contact-container">
+            <span class="big-circle"></span>
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let`s get in touch</h3>
+                    <form action="https://formsubmit.co/tropicalroleplayo@gmail.com" method="POST"></form>
+                    <p class="text">
+                        This is a test
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <i class="far fa-envelope"></i>
+                            <p>nonstopstudio@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="Images/logo.png" class="icon" alt="">
+                            <p>This is test 3</p>
+                        </div>
+                        <div class="information">
+                            <img src="Images/logo.png" class="icon" alt="">
+                            <p>This is test 4</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with us.</p>
+                        <div class="social-icon">
+                            <a href="https://discord.gg/XHcEZWQJUY">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="contact.html">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input">
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input">
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!------- Footer ------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>        Tropical RolePlay FivePD is a FivePD server on fivem.
+                We are a new community, and there <br> are many things you can do on the server.
+                  You can RolePlay as a Fire, EMS or Police in FivePD. 
+            </p>
+            <div class="icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-discord"></i>
+            </div>
+            <p>Made with <i class="far fa-heart"></i> by Non-Stop Studio</p>
+        </section>
+        <!------JavaScript for toggle Menu Small Device ------>
+        <script src="app.js"></script>
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+}
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+}
+
+</script>
+
+    </body>
+</html>
